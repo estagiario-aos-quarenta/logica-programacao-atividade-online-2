@@ -3,17 +3,20 @@ O programa cadastra uma lista de participantes e palestrantes de um evento e ex�
 
 Algoritmo do programa:
 1- ler a data do evento;
-2- validar a data do evento: Se a data do evento for maior que a data atual, segue para o próxino passo, caso contrário, informa ao usuário que a data é inválida e
-   pergunta se ele quer entrar com uma nova data. Em caso afirmativo, retorna ao passo anterior, caso contrário, segue para o próximo passo;
+2- validar a data do evento: Se a data do evento for maior que a data atual, segue para o próxino passo, caso
+   contrário, informa ao usuário que a data é inválida e pergunta se ele quer entrar com uma nova data. Em caso
+   afirmativo, retorna ao passo anterior, caso contrário, segue para o próximo passo;
 3- cadastrar evento;
 4- cadastrar palestrante;
-5- perguntar se o usuário quer cadastrar outro palestrante: em caso afirmativo, retorna ao passo anterior, caso contrário, segue para o próxino passo; 
-6- verificar o tamanho da lista: caso seja igual a 100 participantes, encerra as inscrições, caso contrário, segue para o próximo passo;
-7- ler a idade do participante: Se a idade do participante for maior que 18 anos, prossegue para o próximo passo, senão, informa que o participante
-   deverá ter uma idade maior que 18 anos e pergunta se ele quer continuar cadastrando participantes. Em caso afirmativo, repete o passo;
+5- perguntar se o usuário quer cadastrar outro palestrante: em caso afirmativo, retorna ao passo anterior, caso
+   contrário, segue para o próxino passo; 
+6- verificar o tamanho da lista: caso seja igual a 100 participantes, encerra as inscrições, caso contrário, segue
+   para o próximo passo;
+7- ler a idade do participante: Se a idade do participante for maior que 18 anos, prossegue para o próximo passo, 
+   senão, informa que o participante deverá ter uma idade maior que 18 anos e repete o passo;
 8- cadastra o participante;
-9- pergunta se quer continuar cadastrando participantes: em caso afirmativo, volta ao passo 6, caso contrário, exibe a lista de palestrantes e participantes e 
-   finaliza o programa.
+9- pergunta se quer continuar cadastrando participantes: em caso afirmativo, volta ao passo 6, caso contrário, exibe
+   a lista de palestrantes e participantes e finaliza o programa.
 */
 
 //declarações
@@ -48,7 +51,7 @@ do {
         // cadastra participantes
         do {
             // verifica o tamanho da lista
-            if (listaDeParticipantes.get('Participantes').length < 2) {
+            if (listaDeParticipantes.get('Participantes').length < 99) {
                 idadeDoParticipante = imput.questionInt('\nQual da idade do participante?: ');
                 // verifica a idade do participante
                 if (idadeDoParticipante >= 18) {
